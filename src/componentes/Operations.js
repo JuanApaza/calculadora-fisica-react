@@ -1,13 +1,9 @@
 import React from 'react'
 import './styles/Operations.css'
 function Operations({radioCirculo,setRadioCirculo,resultado,setResultado}) {
-   
-
     const handleOnChange = (event) =>{
         setRadioCirculo(event.target.value);
     }
-
-    
     return (
         <section class="operation-container">
         <label for="radio-circulo">Radio del Circulo</label>

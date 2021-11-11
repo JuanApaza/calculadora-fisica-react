@@ -1,11 +1,11 @@
 
 import './App.css';
-import { Circulo } from './componentes/Circulo';
+import { Triangulo } from './componentes/Triangulo';
 
 function App() {
   return (
     <div className="App">
-      <Circulo/>
+      <Triangulo/>
     </div>
   );
 }

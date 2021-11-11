@@ -1,18 +1,19 @@
 import React from 'react'
 import './styles/Buttons.css'
-function Buttons({radioCirculo,setResultado}) {
-    const calcularArea =(radioCirculo)=>{
-        const area = (Math.PI * Math.pow(radioCirculo, 2)).toFixed(2);
+function Buttons({baseDelTriangulo,alturaDelTriangulo,setResultado}) {
+    const calcularArea =(baseDelTriangulo,alturaDelTriangulo)=>{
+        const area = baseDelTriangulo * alturaDelTriangulo /2;
         setResultado(area);
     }
-    const calcularPerimetro =(radioCirculo)=>{
-        const perimetro = (2 * Math.PI * radioCirculo).toFixed(2);
+    const calcularPerimetro =(baseDelTriangulo,alturaDelTrianguloo)=>{
+        const ladosIsoseles = Math.pow( Math.pow(baseDelTriangulo/2,2) + Math.pow(alturaDelTriangulo,2) ,0.5)
+        const perimetro = Math.round( 2*ladosIsoseles+baseDelTriangulo*100)/100;
         setResultado(perimetro);
     }
     return (
         <section className ="button-container">
-            <button className="button-container__payment" onClick={()=>calcularArea(radioCirculo)}>Calcular el area</button>
-            <button className="button-container__payment" onClick={()=>calcularPerimetro(radioCirculo)}>Calcular el perimetro</button>
+            <button className="button-container__payment" onClick={()=>calcularArea(baseDelTriangulo,alturaDelTriangulo)}>Calcular el area</button>
+            <button className="button-container__payment" onClick={()=>calcularPerimetro(baseDelTriangulo,alturaDelTriangulo)}>Calcular el perimetro</button>
             <a href="/">
             <button className="button-container__cancel">Cancelar</button>
             </a>

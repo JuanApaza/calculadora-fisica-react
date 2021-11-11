@@ -1,4 +1,4 @@
-.circulo-card {
+.triangulo-card {
     margin: 0 auto;
     margin-top: 60px;
     width: 85%;
@@ -7,7 +7,7 @@
     background-color: white;
 }
   
-.circulo-card header img {
+.triangulo-card header img {
     height: 148px;
     width: 100%;
 }

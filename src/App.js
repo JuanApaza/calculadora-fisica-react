@@ -1,11 +1,11 @@
 
 import './App.css';
-import { Triangulo } from './componentes/Triangulo';
+import { Rectangulo } from './componentes/Rectangulo';
 
 function App() {
   return (
     <div className="App">
-      <Triangulo/>
+      <Rectangulo/>
     </div>
   );
 }

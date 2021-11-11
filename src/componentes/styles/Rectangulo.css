@@ -1,4 +1,4 @@
-.triangulo-card {
+.rectangulo-card {
     margin: 0 auto;
     margin-top: 60px;
     width: 85%;
@@ -7,7 +7,7 @@
     background-color: white;
 }
   
-.triangulo-card header img {
+.rectangulo-card header img {
     height: 148px;
     width: 100%;
 }

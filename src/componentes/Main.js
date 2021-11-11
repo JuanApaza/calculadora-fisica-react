@@ -7,12 +7,12 @@ function Main(props) {
         
         <main>
             <h1>Calculadora de Fisica</h1>
-            <p>Triangulo</p>
+            <p>Rectangulo</p>
             <Operations
-            baseDelTriangulo={props.baseDelTriangulo}
-            setbaseDelTriangulo={props.setbaseDelTriangulo}
-            alturaDelTriangulo={props.alturaDelTriangulo}
-            setalturaDelTriangulo={props.setalturaDelTriangulo}
+            baseDelRectangulo={props.baseDelRectangulo}
+            setbaseDelRectangulo={props.setbaseDelRectangulo}
+            alturaDelRectangulo={props.alturaDelRectangulo}
+            setalturaDelRectangulo={props.setalturaDelRectangulo}
             resultado={props.resultado}
             setResultado={props.setResultado}
             />

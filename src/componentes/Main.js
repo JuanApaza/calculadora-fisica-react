@@ -7,10 +7,10 @@ function Main(props) {
         
         <main>
             <h1>Calculadora de Fisica</h1>
-            <p>Circulo</p>
+            <p>Cuadrado</p>
             <Operations
-            radioCirculo={props.radioCirculo}
-            setRadioCirculo={props.setRadioCirculo}
+            ladoCuadrado={props.ladoCuadrado}
+            setladoCuadrado={props.setladoCuadrado}
             resultado={props.resultado}
             setResultado={props.setResultado}
             />

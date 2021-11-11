@@ -2,22 +2,22 @@ import React, { useState } from 'react'
 import { Buttons } from './Buttons'
 import { Header } from './Header'
 import { Main } from './Main'
-import './styles/Circulo.css'
-function Circulo() {
-    const [radioCirculo, setRadioCirculo]=useState('');
+import './styles/Cuadrado.css'
+function Cuadrado() {
+    const [ladoCuadrado, setladoCuadrado]=useState('');
     const [resultado, setResultado]= useState(0);
 
     return (
-        <article className="circulo-card">
+        <article className="cuadrado-card">
             <Header/>
             <Main
-             radioCirculo={radioCirculo}
-             setRadioCirculo={setRadioCirculo}
+             ladoCuadrado={ladoCuadrado}
+             setladoCuadrado={setladoCuadrado}
              resultado={resultado}
              setResultado={setResultado}
              />
             <Buttons
-            radioCirculo={radioCirculo}
+            ladoCuadrado={ladoCuadrado}
             setResultado={setResultado}
             />
 
@@ -25,4 +25,4 @@ function Circulo() {
     )
 }
 
-export {Circulo}
+export {Cuadrado}

@@ -1,11 +1,11 @@
 
 import './App.css';
-import { Circulo } from './componentes/Circulo';
+import { Cuadrado } from './componentes/Cuadrado';
 
 function App() {
   return (
     <div className="App">
-      <Circulo/>
+      <Cuadrado/>
     </div>
   );
 }

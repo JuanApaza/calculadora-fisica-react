@@ -1,13 +1,13 @@
 import React from 'react'
 import './styles/Operations.css'
-function Operations({radioCirculo,setRadioCirculo,resultado,setResultado}) {
+function Operations({ladoCuadrado,setladoCuadrado,resultado,setResultado}) {
     const handleOnChange = (event) =>{
-        setRadioCirculo(event.target.value);
+        setladoCuadrado(event.target.value);
     }
     return (
         <section class="operation-container">
-        <label for="radio-circulo">Radio del Circulo</label>
-        <input type="text" id="radio-circulo" value={radioCirculo} onChange={handleOnChange} placeholder="Ingrese una cantidad en centimetros"/>
+        <label for="lado-cuadrado">Lado Cuadrado</label>
+        <input type="text" id="lado-cuadrado" value={ladoCuadrado} onChange={handleOnChange} placeholder="Ingrese una cantidad en centimetros"/>
         <div className="operation-container__resultado">
           <span>Resultado</span>
           <p>{resultado}</p>
@@ -16,5 +16,4 @@ function Operations({radioCirculo,setRadioCirculo,resultado,setResultado}) {
     )
 }
 
-export {Operations
-}
+export {Operations}
